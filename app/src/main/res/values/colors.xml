@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#F8F8F8</color>
+    <color name="colorSecondary">#062357</color>
+    <color name="colorPrimary">#F4A8A8</color>
+    <color name="colorPrimaryDark">#C76767</color>
+    <color name="colorAccent">#E2CB8F</color>
+
+    <!--additional colors -->
+    <color name="blue">#6A9CFD</color>
+    <color name="dblue">#BCE6FF</color>
+    <color name="offWhite">#F4F2F2</color>
+    <color name="grey">#898989</color>
+
+    //onboarding colors
+    <color name="background">#F0F4F3</color>
+    <color name="buttontext">#50C2C9</color>
+
+    //indicator color
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#50C2C9</color>
+</resources>

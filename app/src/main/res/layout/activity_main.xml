@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    tools:context=".MainActivity">
+
+    <!-- Top Buttons -->
+    <ImageButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="13dp"
+        android:backgroundTint="@color/offWhite"
+        app:srcCompat="@drawable/bookmark" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="265dp"
+        android:layout_height="64dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="26dp"
+        app:srcCompat="@drawable/ml" />
+
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/offWhite"
+        app:srcCompat="@drawable/baseline_more_vert_24" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <!-- Buttons inside dynamic FrameLayout -->
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="280dp"
+            android:backgroundTint="@color/offWhite"
+            app:srcCompat="@drawable/baseline_camera_alt_24" />
+
+        <ImageButton
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="370dp"
+            android:backgroundTint="@color/offWhite"
+            app:srcCompat="@drawable/baseline_content_copy_24" />
+
+        <ImageButton
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="330dp"
+            android:backgroundTint="@color/offWhite"
+            app:srcCompat="@drawable/baseline_delete_24" />
+    </FrameLayout>
+
+    <!-- BottomAppBar and BottomNavigationView -->
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/blue"
+        android:backgroundTint="@color/blue"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabAlignmentMode="center">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelVisibilityMode="labeled"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_menu"
+            android:backgroundTint="@color/blue"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!-- FloatingActionButton for the Mic -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/offWhite"
+        android:src="@drawable/mic"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="center"
+        app:maxImageSize="40dp"
+        app:tint="@color/black" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

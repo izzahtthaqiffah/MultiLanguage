@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MultiLanguange</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="downloaded_model_label">Downloaded models: %1$s</string>
+    <string name="translate_progress">Translating...</string>
+    //Headings
+    <string name="heading_one">Translation Feature</string>
+    <string name="heading_two">Camera Feature</string>
+    <string name="heading_three">Voice Feature</string>
+    <string name="heading_fourth">Dictionary Feature</string>
+
+    //Description
+    <string name="desc_one">Use the text box to write down sentences and explore the language library for various of languages!</string>
+    <string name="desc_two">Click on the camera to access your camera and storage, to be able to use images convert into text!</string>
+    <string name="desc_three">Click on the Microphone button and speak out the words you do not know!</string>
+    <string name="desc_fourth">Having trouble understanding? The Dictionary will give you the definitions and nouns </string>
+
+</resources>
